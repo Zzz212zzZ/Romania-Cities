@@ -1,0 +1,66 @@
+.container>svg {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: #e4f0f1;
+    color: #6c9bd0;
+    text-decoration-color: #fafafa;
+    border-color: #edb6b6;
+    float: left;
+    left: 0px;
+    font-size: 30px;
+}
+
+body>.container {
+    height: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #f0c7c7;
+    width: 840px;
+    left: 345px;
+    position: absolute;
+    background-color: #e4f0f1;
+}
+
+.container>.container {
+    position: relative;
+}
+
+.container>.container>svg {
+    position: fixed;
+}
+
+.container>.badge.bg-primary {
+    position: absolute;
+}
+
+.container>.line {
+    height: 28px;
+    width: 28px;
+}
+
+#line1 {
+    border-style: solid;
+}
+
+#num {
+    font-size: 8px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    body>.container {
+        height: 380px;
+    }
+
+    .container>.container {
+        height: 380px;
+        border-style: solid;
+        border-color: #ffe0e0;
+        left: 20%;
+    }
+}
